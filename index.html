@@ -277,13 +277,6 @@
 
 				}
 				
-				if ( bottleArray[i].position.x > 200 ) {
-
-					bottleArray[i].position.x = -200;
-					bottleArray[i].position.z = -200;
-
-				}
-
 				water.material.uniforms.time.value += 1.0 / 60.0;
 				controls.update();
 				water.render();
