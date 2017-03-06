@@ -265,8 +265,8 @@
 				for ( var i = 0; i < bottleArray.length; i++) {
 
 					bottleArray[i].position.y = Math.sin( time ) * 20 + 10;
-					bottleArray[i].position.x -= time * 10;
-					bottleArray[i].position.z -= time * 10;
+					bottleArray[i].position.x -= time * 0.1;
+					bottleArray[i].position.z -= time * 0.1;
 
 					if ( bottleArray[i].position.x > 200 ) {
 
