@@ -268,12 +268,19 @@
 					bottleArray[i].position.x -= time * 0.1;
 					bottleArray[i].position.z -= time * 0.1;
 
-					if ( bottleArray[i].position.x > 200 ) {
+// 					if ( bottleArray[i].position.x > 200 ) {
 
-						bottleArray[i].position.x = -200
-						// bottleArray[i].position.z = -20000
+// 						bottleArray[i].position.x = -200
+// 						// bottleArray[i].position.z = -20000
 
-					}
+// 					}
+
+				}
+				
+				if ( bottleArray[i].position.x > 200 ) {
+
+					bottleArray[i].position.x = -200;
+					bottleArray[i].position.z = -200;
 
 				}
 
