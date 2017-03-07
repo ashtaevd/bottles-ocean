@@ -8,7 +8,7 @@
 			body {
 				color: #000;
 				font-family:Monospace;
-				font-size:13px;
+				font-size: 2em;
 				margin: 0px;
 				overflow: hidden;
 			}
@@ -17,7 +17,7 @@
 				position: absolute;
 				top: 0px; width: 100%;
 				text-align:center;
-				padding: 5px;
+				padding: 10px;
 			}
 
 			a {
@@ -208,7 +208,7 @@
 				var loader = new THREE.OBJLoader();
 
 				var radius = 40000;
-				var nBottles = 80;
+				var nBottles = 10;
 
 				var bottleMaterial = new THREE.MeshPhongMaterial( { color: 0xffffff } );
 
@@ -265,8 +265,11 @@
 				for ( var i = 0; i < bottleArray.length; i++) {
 
 					bottleArray[i].position.y = Math.sin( time ) * 20 + 10;
-					bottleArray[i].position.x -= time * 10;
-					bottleArray[i].position.z -= time * 10;
+// 					bottleArray[i].position.x -= time * 10;
+// 					bottleArray[i].position.z -= time * 10;
+					
+					bottleArray[i].position.x -= 20;
+					bottleArray[i].position.z -= 20;
 
 					if ( bottleArray[i].position.x > 200 ) {
 
